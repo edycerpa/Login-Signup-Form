@@ -13,12 +13,20 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: hsl(var(--bg1));
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    /* background-color: hsl(var(--bg1)); */
+    background: linear-gradient(45deg, #002187, #5d7bd9, #00b2ff, #fd821e,  #00b2ff, #5d7bd9, #002187);
+    background-size: 1200% 1200%;
+    animation: fancybg 25s ease infinite;
+}
+@keyframes fancybg {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
 }
 body.active{
     background-color: hsl(var(--bg3) / .8);
@@ -168,7 +176,6 @@ a{
     .container{
         height: 650px;
         width: 400px;
-        /* overflow: hidden; */
     }
     .box-wrapper{
         flex-direction: column;
