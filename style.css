@@ -1,7 +1,7 @@
 :root{
     --bg1: 198 100% 50%;
     --bg2: 231 99% 61%;
-    --bg3: 34 100% 50%;
+    --bg3: 209 100% 28%;
     --bg4: 348 100% 54%;
     --text1: 0 0% 20%;
     --text2: 0 0% 100%;
@@ -21,7 +21,7 @@ body{
     transition: 0.5s;
 }
 body.active{
-    background-color: hsl(var(--bg4));
+    background-color: hsl(var(--bg3) / .8);
 }
 .glass{
     background: rgba( 255, 255, 255, 0.25 );
@@ -155,7 +155,7 @@ form input{
     font-size: 16px;
 }
 .signup-button{
-    background-color: hsl(var(--bg4));
+    background-color: hsl(var(--bg3) / .8);
 }
 .login-button{
     background-color: hsl(var(--bg1));    
